@@ -108,7 +108,7 @@ require('inc/functions.php');
 
         <p>La fonction <code>sizeof()</code> ou encore l'autre fonction prédéfinie <code>count</code> permettent de connaître le nombre de clé ou d'indices qui se trouvent dans un tableau. Dans cet exemple, sizeof() a compté 5 indices dans le tableau et elui-là est donc parcouru 5 fois. </p>
 
-        <p>Ici notre variable $i représente la clé ou l'indice du tableau => au premier tour $i représente l'indice 0(stylo) et il va évoluer pour représenter les défférentes indice de notre tabmeau. C'est la raison pour laquelle on devra passer entre crochet notre $i après notre $listefourniture : on explique au programme qu'on veut afficher l'élément correspondant à l'indice indiqué.</p>
+        <p>Ici notre variable $i représente la clé ou l'indice du tableau => au premier tour $i représente l'indice 0(stylo) et il va évoluer pour représenter les défférentes indice de notre tableau. C'est la raison pour laquelle on devra passer entre crochet notre $i après notre $listefourniture : on explique au programme qu'on veut afficher l'élément correspondant à l'indice indiqué.</p>
 
         <p>Mais une autre boucle est encore plus adaptée à la lecture de tableau : c'est la boucle <code>foreach</code> car on ne sera pas obligé de lui fournir un numéro </p>
 
@@ -120,7 +120,7 @@ require('inc/functions.php');
 
             <?php
 
-            // indiceTbealu c'est le premier élément du tableau et objetTableau deuxième élément pour le tableau 
+            // indiceTbleau c'est le premier élément du tableau et objetTableau deuxième élément pour le tableau 
             foreach ($listefourniture as $indiceTableau => $objetTableau) {
 
                 echo " <li>$indiceTableau- $objetTableau </li>";

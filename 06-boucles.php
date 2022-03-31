@@ -48,7 +48,7 @@ do{
 
     echo $i;
 }while($i > 0);
-/* Ici on exécute une fois le code m^me si on ne remplit pas la condition dû à l'ordre de la boucle do... while => la boucle s'exécute puis rencontre une condition qu'elle ne remplit pas et et elle s'arrête donc.  */
+/* Ici on exécute une fois le code même si on ne remplit pas la condition dû à l'ordre de la boucle do... while => la boucle s'exécute puis rencontre une condition qu'elle ne remplit pas et et elle s'arrête donc.  */
 
 
 ?>

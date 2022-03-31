@@ -91,19 +91,115 @@ require('../inc/functions.php');
 
                 ?>
 
-
-
-
             </div>
 
-        </section>
+
+<div class="col-12">
+
+<p>Exercice: affichez tous les commentaires dans un tableau avec l'id dans une colonne, le pseudo dans une autre colonne et enfin le message dans la dernière colonne.</p>
+
+
+
+<?php 
+
+$requete = $pdoDialogue ->query("SELECT * FROM commentaire /*LIMIT 0,2*/");/* ICI je rentre ma requête dans ma variable $requete => je sélectionne tous les éléments qui se trouvent dans la table commentaire*/
+
+/* Si on cherche à afficher 2 élément en sql il faut  écrire aisni :$requete = $pdoDialogue ->query("SELECT * FROM commentaire /*LIMIT 0,2)*/
+
+
+echo "
+<table class=\"table table-striped\">
+
+<thead>
+<tr>
+
+<th>ID</th>
+<th>Pseudo</th>
+<th>Messsage</th>
+<th>date_enregistrment</th>
+</tr>
+
+</thead>
+
+
+<tbody>
+
+";
+/*Ici je fais echo de mon tableau en PHP=> j'ai l'ouverture ainsi que le thead de mon tableau */
+while($ligne = $requete -> fetch(PDO:: FETCH_ASSOC)){
+/*Grâce à ma boucle while (tant que) j'exécute le bloc de code TANT QUE j'ai des enregistrments qui correspondent à ma requête*/ 
+echo "<tr>";
+echo "<td>#" .$ligne['id_commentaire']."</td> ";
+echo "<td>" .$ligne['pseudo']."</td> ";
+echo "<td>" .$ligne['message']."</td> ";
+echo "<td>".date('d/m/Y - H:i:s', strtotime($ligne['date_enregistrement']))."</td>";
+echo"</tr>"; /*Je bouscle le message => ici quand on affiche la date sans la miodifier elle bient comme elle est dans PHP, en anglais. On utilise la fonction prédéfinbie date () afin de modifier son format . La fonction strtotime() (string to time) permet de dire que l'on veut qu'une chîne de caractères soit considérée comme un format date /heure */
+
+}/*fin de la boucle*/
+
+
+echo"
+</tbody>
+</table>
+/*je ferme mon tableau*/
+";/*Ici je dois fermer table */
+
+
+
+?>
+
+
+<p> Rajoutez  une colonne à votre tableau avec la notion de date d'enregistrement , Attention, pensez bien à regarder sur le doc de PHP pour le format data/heure</p>
+
+<p>Affichez la liste de toutes les personnes qui ont écrit des commentaires ainsi que la date que le commentaire a été écrit dans une ol .</p>
 
 
 
 
+<?php 
 
 
-    </main>
+$requete = $pdoDialogue->query("SELECT pseudo, date_enregistrement FROM commentaire");
+
+echo "<ol>";
+
+while($ligne=$requete->fetch(PDO::FETCH_ASSOC)){
+
+echo "<li>" .$ligne['pseudo']."".date('d/m/Y', strtotime($ligne['date_enregistrement']))."</li>";
+
+
+}
+
+
+echo "</ol>";
+
+
+?>
+
+
+
+<p>Comptez le nombre d'enregistrements dans une table</p>
+
+<?php 
+
+
+$requete = $pdoDialogue->query("SELECT *FROM commentaire"); /*Je selectionne tous les éléments qui se trouvent dans ma table commentaire*/
+
+
+
+$nbrCommentaire  = $requete->rowCount(); /*ici je compte le nombre de rangées renvoyées par ma requetes*/
+
+echo "<p> Il ya $nbrCommentaire commentaires dans la table .</p>"
+
+
+/* Grâce à lafonction prédéfinie rowCount () on va pouvoir compter le nombre d'enregistrement qui correspondent à notre requête et ainsi vérifier qu ele navigateur récupère bien toutes les données */
+?>
+
+</div>
+
+</section>
+
+</main>
 
 
 

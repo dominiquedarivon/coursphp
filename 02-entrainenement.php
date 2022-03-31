@@ -80,12 +80,12 @@ echo "$variable4:". gettype($variable4) . "<br>";
 FALSE
 */ 
 
-// La constante existe  aussi e, PHP , c'est une fonction prédéfinie et elle se déclare de la façon suivante:
+// La constante existe  aussi en, PHP , c'est une fonction prédéfinie et elle se déclare de la façon suivante:
 
 define("CAPITALE","Paris");
 echo "<p>".CAPITALE."</p>";
 
-/* Par cobnvention, une constante se déclare toujours en majuscule. on déclare d'abord de la constante , puis après la virgule, son contenu. Le contenu d'une constante ne peut pas varier 
+/* Par cobnvention, une constante se déclare toujours en majuscule. on déclare d'abord la constante , puis après la virgule, son contenu. Le contenu d'une constante ne peut pas varier 
 on utilisera majoritairement */
 
 // il existe des constantes magiques : 
@@ -94,7 +94,7 @@ echo __FILE__. "<br>";
 echo __LINE__. "<br>";
 
 
-/* La première renvoie le fichoer dans le quel on se trouve et son emplacement 
+/* La première renvoie le fichier dans le quel on se trouve et son emplacement 
 la seconde nous renvoie la ligne à laquelle le code a été demandé 
 il en exist 'autres que vous pouvez découvrir sur le doc officielle de PHP */
 
