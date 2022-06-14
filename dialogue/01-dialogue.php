@@ -77,6 +77,7 @@ require('../inc/functions.php');
 
                 $requete = $pdoDialogue->query("SELECT * FROM commentaire WHERE pseudo='Thimothée'");/* Dans la variable $requete => je fais ma requete en SQL grâce à la fonction query().Cette dernière doit automatiquement s'appuyer sur ma variable dans laquelle j'ai placé les informations de connexion .*/
                 jeprint_r($requete);/* je debug grâce à ma fonction je print_r */
+               
                 $ligne = $requete->fetch(PDO::FETCH_ASSOC);
                 // jeprint_r($ligne);
 
@@ -85,6 +86,8 @@ require('../inc/functions.php');
 <li>Id :  ' . $ligne['id_commentaire'] . '</li>
 <li>Pseudo :  ' . $ligne['pseudo'] . '</li>
 <li>Message:  ' . $ligne['message'] . '</li>
+
+ 
 
 
 </ul>'
@@ -189,10 +192,10 @@ $requete = $pdoDialogue->query("SELECT *FROM commentaire"); /*Je selectionne tou
 
 $nbrCommentaire  = $requete->rowCount(); /*ici je compte le nombre de rangées renvoyées par ma requetes*/
 
-echo "<p> Il ya $nbrCommentaire commentaires dans la table .</p>"
+echo "<p> Il y a $nbrCommentaire commentaires dans la table .</p>"
 
 
-/* Grâce à lafonction prédéfinie rowCount () on va pouvoir compter le nombre d'enregistrement qui correspondent à notre requête et ainsi vérifier qu ele navigateur récupère bien toutes les données */
+/* Grâce à lafonction prédéfinie rowCount () on va pouvoir compter le nombre d'enregistrement qui correspondent à notre requête et ainsi vérifier quel navigateur récupère bien toutes les données */
 ?>
 
 </div>

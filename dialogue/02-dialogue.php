@@ -66,7 +66,7 @@ require("../inc/functions.php")
 
        <?php
         
-       /* je traite le formulaire de façon securisé grpace à une requête préparée */
+       /* je traite le formulaire de façon securisé grace à une requête préparée */
        if (!empty($_POST)) { /* je vérifie que $_POST contient des informations. */
         $_POST['pseudo'] = htmlspecialchars($_POST['pseudo']); /*  grâce à cette instruction, je me prémunie des failles et des injections SQL */
         $_POST['message'] = htmlspecialchars(($_POST['message']));

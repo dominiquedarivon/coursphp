@@ -19,7 +19,7 @@
     <div class="p-5 bg-light">
         <div class="container">
             <h1 class="display-3">Les conditions et boucles</h1>
-            <p class="lead">Les conditions sont un chapitre clé, comme dans les autres langages de programmation. Par exemple; lorsque l'on crée un site et que l'un de nos internautes veut se connecter à son espace, il rentrera son pseudo ainsi que son mot de passe. Il faudra alors exprimer la phrase suivante PHP: SI (if) le pseudo est bon et le mdp aussi, tu peux rentrer SINON (elese) tu restes SINON (else) tu restes sur la page avec un message d'erreur.</p>
+            <p class="lead">Les conditions sont un chapitre clé, comme dans les autres langages de programmation. Par exemple; lorsque l'on crée un site et que l'un de nos internautes veut se connecter à son espace, il rentrera son pseudo ainsi que son mot de passe. Il faudra alors exprimer la phrase suivante PHP: SI (if) le pseudo est bon et le mdp aussi, tu peux rentrer SINON (else) tu restes SINON (else) tu restes sur la page avec un message d'erreur.</p>
 
         </div>
     </div><!-- fin de jumbotron -->
@@ -53,7 +53,7 @@
 
                 <p> Nous avons déclarer 3 variables : a vaut 10, b vaut 5 et c vaut 2. Ici , la condition est simple => on pose en fait la question =>est-ce que a est plus grand ou plus petit que .</p>
 
-                <p>EXO: Ftaites la même chose en vérifiant si a est strictement supérieur ou inférieur à C ;</p>
+                <p>EXO: Faites la même chose en vérifiant si a est strictement supérieur ou inférieur à C ;</p>
 
 
                 <?php /* ICI MON CODE */
@@ -79,15 +79,15 @@
 
 
                 if ($a > $b && $b > $c) {
-                    echo "<p class=\"alert alert-seuccess\"> a est supérieur à b ET b est supérieur à c</p>";
+                    echo "<p class=\"alert alert-seuccess\"> a est supérieur à b et b est supérieur à c</p>";
                 } else {
 
-                    echo "<p class=\"alert alert-seuccess\"> L'une ou les deux conditions ne sont pas remplies.</p>";
+                    echo "<p class=\"alert alert-success\"> L'une ou les deux conditions ne sont pas remplies.</p>";
                 }
 
                 ?>
 
-                <p>Dans le code PHP d'au dessus, on vérifie si a est supérieur à b qui lui-même est supérieur à C. Dans le cas ou l'une ou les deux conditions s'avères fausses, le esle sera exécuté; Avec le signe <code>&&</code> ( qui se dit AND ou et commercial ou superluette), il faut absolument que les deux conditions soient bonnes pour que l'evalutation du code retourne TRUE et que l'on puisse rentrer dans le if.</p>
+                <p>Dans le code PHP d'au dessus, on vérifie si a est supérieur à b qui lui-même est supérieur à C. Dans le cas ou l'une ou les deux conditions s'avères fausses, le esle sera exécuté; Avec le signe <code>&&</code> ( qui se dit AND ou et commercial ou esperluette), il faut absolument que les deux conditions soient bonnes pour que l'evalutation du code retourne TRUE et que l'on puisse rentrer dans le if.</p>
 
 
                 <h3 class="text-center"> Condition simple avec QR </h3>
@@ -271,9 +271,9 @@
                 }
                 ?>
 
-<p>Il faut être très vigilant lors de l'écriture d'une boucle Switch : Il faut prenser au case , aux deux points , au break, au default, etc . Dans le cas d'une switch les conditions complètes ne fonctionnent pas : il n'est pas possible de vérifier si $a > $b exemple . </p>
+                <p>Il faut être très vigilant lors de l'écriture d'une boucle Switch : Il faut prenser au case , aux deux points , au break, au default, etc . Dans le cas d'une switch les conditions complètes ne fonctionnent pas : il n'est pas possible de vérifier si $a > $b exemple . </p>
 
-<h2> </h2>
+                <h2> </h2>
 
 
             </div><!-- fin de la colonne -->

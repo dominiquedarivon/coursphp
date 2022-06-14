@@ -35,7 +35,7 @@
 <h2 class="tex-center"> La fonction date </h2>
 
 
-<p>Lorsque vou voyez un mot clé en anglais (qui n'est pas le votre) suivi de parenthèses , c'est qu'il s'agit d'une fonction PHP prédéfinie.</p>
+<p>Lorsque vous voyez un mot clé en anglais (qui n'est pas le votre) suivi de parenthèses , c'est qu'il s'agit d'une fonction PHP prédéfinie.</p>
 
 
 <?php /* ICI MON CODE */
@@ -56,7 +56,7 @@ echo "<p class=\"alert alert-success\">Date du jour:".date('d-m-Y')."</p>";
 </ul>
 
 
-<p> Le fait de mettre les arguments en monuscule ou en majuscule à une incidence sur le résultat : essayez ! un argument , aussi appelé paramètres, est un information entrante dans la fonction </p>
+<p> Le fait de mettre les arguments en minuscule ou en majuscule à une incidence sur le résultat : essayez ! un argument , aussi appelé paramètres, est un information entrante dans la fonction </p>
 
 
 

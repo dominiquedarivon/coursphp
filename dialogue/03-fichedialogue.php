@@ -59,7 +59,7 @@
                 /* "=>" Cette flèche signifie que ce qui vient avant et ce qui après correspondant */
                 /* "->" Cette flèche signigie que l'on s'appuie sur ce qui se trouve avant pour éxécuter quelque chose  */
 
-                if (isset($_GET['id_commentaire'])) {  /* On vérifie que l'id du commentaire existe dans otre BDD si il y est alors on éxécute le code ci-dessous */
+                if (isset($_GET['id_commentaire'])) {  /* On vérifie que l'id du commentaire existe dans notre BDD si il y est alors on éxécute le code ci-dessous */
                     $result = $pdoDialogue->prepare("SELECT * FROM commentaire WHERE id_commentaire= :id_commentaire");
 
                     $result->execute(array(
